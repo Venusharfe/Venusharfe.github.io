@@ -51,7 +51,7 @@ document.addEventListener('click', (event) => {
 });
 
 
-// hides the topnav when a click event occurs outside the menu
+// hides the topnav in the mobile version when a click event occurs outside the menu
 const menuButton = document.getElementById("navbutton");
 const menu = document.getElementById("topnav");
 
@@ -67,7 +67,7 @@ document.addEventListener('click', (event) => {
 document.addEventListener('scroll', (event) => {
   const y = document.getElementById("topnav");
   
-  if (document.documentElement.scrollTop > 160 && a == true)  {
+  if (document.documentElement.scrollTop > 150 && a == true)  {
       if(y.className === "header sticky"){
         y.className === "header sticky";
 //        debug.classList.add("SCROLL1")
